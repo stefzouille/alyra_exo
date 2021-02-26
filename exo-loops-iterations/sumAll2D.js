@@ -7,6 +7,8 @@ let tab = [
   [10, -13],
 ]
 
+
+
 for (let i = 0; i < tab.length; ++i) {
   console.log(`Array ${i + 1}:`)
   for (let j = 0; j < tab[i].length; ++j) {

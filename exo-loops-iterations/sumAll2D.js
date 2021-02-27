@@ -7,20 +7,23 @@ let tab = [
   [10, -13],          //-3
 ]
 
- let c0 = tab[0][0] + tab[0][1] + tab[0][2]
- let c1 = tab[1][0] + tab[1][1] + tab[1][2]
- let c2 = -tab[2][0] + tab[2][1] 
- let c3 = tab[2][0] + tab[2][1] 
-                                  //c0 + c1 = 12
- let sum = c0 + c1 + c2 + c3      //c2 + c3 = -12
+//  let c0 = tab[0][0] + tab[0][1] + tab[0][2]
+//  let c1 = tab[1][0] + tab[1][1] + tab[1][2]
+//  let c2 = -tab[2][0] + tab[2][1] 
+//  let c3 = tab[2][0] + tab[2][1] 
+//                                   //c0 + c1 = 12
+//  let sum = c0 + c1 + c2 + c3      //c2 + c3 = -12
                
 
-console.log(sum)
+// console.log(sum)
+let result = 0
+for ( i = 0; i < tab.length; i++) {
+  for ( j = 0; j < tab[i].length; j++)
+  result += tab[i][j]
+}
+console.log(result)
+     
 
-
-
-// let a = [1, 2, 3]
-// let b = a[2] * 3 + 4 / 2
 
 
 // for (let i = 0; i < tab.length; ++i) {

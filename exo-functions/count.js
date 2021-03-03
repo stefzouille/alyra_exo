@@ -1,10 +1,12 @@
-const count = (min, step, max) => {
-console.log(min + step + max)
+
+ const count = (min,step ,max) => {
+  for (; min < max; min += step) {
+console.log(min)
+  }
 }
  
-let min = 0
-let max = 100
-sum = count(0, 100)
+count(5, 10, 100)
 
-console.log(sum)
+
+//pas compris pour autant tout a 100%
 

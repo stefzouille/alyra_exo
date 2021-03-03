@@ -1,6 +1,8 @@
-const typeOf = (var1) {
-return typeOf 'var1'
+const typeDe = (var1) => {
+  return typeof var1 
+
 }
 
-console.log()
+console.log(typeDe(10))
+
 

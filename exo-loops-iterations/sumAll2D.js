@@ -16,6 +16,7 @@ let tab = [
                
 
 // console.log(sum)
+
 let result = 0
 for ( i = 0; i < tab.length; i++) {
   for ( j = 0; j < tab[i].length; j++)

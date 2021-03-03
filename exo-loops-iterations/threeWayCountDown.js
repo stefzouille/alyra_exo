@@ -25,6 +25,7 @@ do{
 
 console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
 
+
 for (let i = 101; i > 0; i -= 2) {
 if (i % 2 === 0) {
 

@@ -3,6 +3,11 @@
 let tab = ['Js', 'Solidity', 'Html', 'Css', 'Python', 'Java', 'C++', 'Rust']
 
 
-for (let elem of tab) {    // variable elem  de tab 
-  console.log(elem)        // affiche la variable elem
+// for (const elem of tab) {    // variable elem  de tab 
+//   console.log(elem)        // affiche la variable elem
+// }
+
+
+for (const [index ,elem] of tab.entries()) {   //retourne un index a chacun des elements ds boucle for
+  console.log(`${elem} is index at ${index}`)       
 }

@@ -14,10 +14,10 @@ let tab = [
 ]
 
 let result = 0
-for ( i = 0; i < tab.length; i++) {
-  for ( j = 0; j < tab[i].length; j++){
+for ( i = 0; i < tab.length; ++i) {
+  for ( j = 0; j < tab[i].length; ++j){
     
-    for ( k = 0; k < tab[i][j].length; k++)
+    for ( k = 0; k < tab[i][j].length; ++k)
     result += tab[i][j][k]
   }
   

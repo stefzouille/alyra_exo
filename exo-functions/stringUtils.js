@@ -2,10 +2,10 @@
 //Si le paramètre passé est 'Hello!' la fonction devra retourné 
 
 const reverseStr = (str) => {
-   return '!olleH'
+   return reverse
 
  }
 
 
 
-console.log(reverseStr('Hello'))
+console.log(reverseStr('def')) // en attente!!

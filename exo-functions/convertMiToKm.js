@@ -3,8 +3,8 @@
 
 
 const convertMiToKm = (dist) => {
- let distance = 1.60934 * dist
- return distance
+ return distance = 1.60934 * dist
+ 
 }
  
 

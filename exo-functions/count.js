@@ -1,12 +1,17 @@
 
- const count = (min,step ,max) => {
-  for (; min < max; min += step) {
-console.log(min)
-  }
-}
+//  const count = (min,step ,max) => {
+//   for (; min < max; min += step) {
+// console.log(min)
+//   }
+// }
  
-count(5, 10, 100)
+// count(5, 10, 100)
 
 
-//pas compris pour autant tout a 100%
+const count = (min, max, step) => {
+  for (let i = min; i <= max; i += step)
+  console.log(i)
+}
 
+count(0, 20, 2)
+count(1, 11, 3)

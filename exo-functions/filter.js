@@ -1,9 +1,9 @@
 const filter = (tab) => {
-  
-  return tab.filter((item, index) => tab.indexOf(item) === index)
+ 
+ 
 
 }
 
 
 
-console.log(filter(1, 2, 3, 4))
+console.log(filter([1, 2, 1, 3, 2, 4, 5, 7, 5, 1]))

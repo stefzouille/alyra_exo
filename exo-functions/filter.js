@@ -1,43 +1,36 @@
-//const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
-
-//const result = words.filter(word => word.length > 6);
-
-//console.log(result);
-// expected output: Array ["exuberant", "destruction", "present"]
 
 
-//  const filter = (words, fct, []) => {
-//    const newArray = []
-//     for (const elem of words) {
-//     newArray.push(fct(elem))                         //fct is not a function !
-//         }
-//    result = words.filter(word => word.length > 6)  
-//       return result = words.filter(fct(newArray[tab]))
-   
+// const bug = (word) => {
+//   if ( word.length >= 6){
+//     return true
+//   } else {
+//     return false
 //   }
-//   console.log(filter(['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present']))
+// }
+// const filter = (tab, fct) => {
+//   let newArray = []
+//   for ( let i = 0; i < tab.length; i++){
+//     if (fct(tab[i])) {
+//         newArray.push(tab[i])
+//     }
+//   }
+// return newArray
+// }
+// console.log(filter(['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'], bug))
 
-  
-// I dry like a piece of wood in the oven
-
-const bug = (word) => {
-  if ( word.length >= 6){
-    return true
-  } else {
-    return false
-  }
-
+isEven = (number) => {
+    return number % 2 === 0 ? true : false
 }
 
-const filter = (tab, fct) => {
-  let newArray = []
-  for ( let i = 0; i < tab.length; i++){
-    if (fct(tab[i])) {
-        newArray.push(tab[i])
+let filter = (func, array) => {
+    let virginTab = []
+    for (let i = 0; i < array.length; i++) {
+        func(array[i]) ? virginTab.push(array[i]) : ''
     }
-  }
-return newArray
+    return virginTab
 }
-console.log(filter(['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'], bug))
 
-//console.log(filter(['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present']))
+
+numbers = [12, 1, 43, 3, 8, 9, 22, 6, 19, 88, 76]
+
+console.log(filter(isEven, numbers))

@@ -24,7 +24,7 @@ const div = (nb1, nb2) => {
 }
 //console.log(div(10, 2))
 
-const calc = (nb1, op, nb2) => {
+const calc = (op, nb1, nb2) => {
   switch (op) {
     case '+': return add(nb1, nb2)
     break
@@ -34,9 +34,11 @@ const calc = (nb1, op, nb2) => {
     break
     case '/': return div(nb1, nb2)
     break
+    default:
+      return 'operateur non reconnu,veuillez recommencer svp.'
 
   }
 
 }
 
-console.log(calc(5, '+', 5))
+console.log(calc('%', 5, 5))

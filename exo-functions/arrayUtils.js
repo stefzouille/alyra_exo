@@ -14,15 +14,15 @@ const biggest = (tab) => {
 }
 
 const sortAscend = (tab) => {
-  return tab.sort((a, b) => a - b)
-}
+  return tab.sort((a, b) => {return a - b})  //le {return  ....} pas obligé a la fin
+} 
 
 const makeUnique = (nbs) => {
-  return nbs.filter((item, index) => nbs.indexOf(item) === index)
+  return sortAscend (nbs.filter((item, index) => nbs.indexOf(item) === index))
 }
 
 
 
 console.log(biggest([99, 100, 101, 1]))
 console.log(sortAscend([99, 100, 101, 1]))
-console.log(makeUnique([1, 2, 1, 3, 2, 4, 5, 7, 5, 1]))
+console.log(makeUnique([1, 2, 8, 1, 3, 2, 4, 5, 7, 5, 1]))
